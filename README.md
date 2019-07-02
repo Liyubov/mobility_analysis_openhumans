@@ -38,7 +38,17 @@ To more specific:
 
 # theoretical analysis of trajectories
 
-Analysis of other dataset of roughly a million individual displacements made here (work by D.Brockmann group)
+We also fit the distributions to CTRW model. Important properties of CTRW are r(t) and d(t) distributions of lengths of jumps and durations correspondingly.
+
+For more details look at code and papers here https://github.com/Liyubov/networks_random_walking 
+More details are described for trajectories on networks: 
+
+L. Tupikina, D.Grebenkov “Temporal and structural heterogeneities in networks” Applied network Journ. (2019) 
+
+D.Grebenkov, L. Tupikina “Heterogeneous continuous time random walk”, link to Physical Rev. E Journal E 97, 012148 (2018)
+
+
+Analysis of other dataset of roughly a million individual displacements was made here (work by D.Brockmann group)
 
 http://rocs.hu-berlin.de/projects/wgproject/index.html 
 
