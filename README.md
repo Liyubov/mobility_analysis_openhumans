@@ -15,6 +15,7 @@ and inspired from notebooks from https://github.com/gedankenstuecke Open Humans
 Erasmus travels is a subnetwork of the first network a., since most of the time 
 students are taking flights while travelling. 
 
+
 The questions we consider here are:
 
 1. How to analyze human moves, while not having the full access to trajectories and additional information about who is traveling?
@@ -34,6 +35,19 @@ The questions here are:
 To more specific:
 "How some specific people are travelling?"
 
+
+# theoretical analysis of trajectories
+
+Analysis of other dataset of roughly a million individual displacements made here (work by D.Brockmann group)
+
+http://rocs.hu-berlin.de/projects/wgproject/index.html 
+
+They found that the dispersal of dollar bills can be described as follows.
+The probability of traveling a distance in a short period of time days decays as a power law, i.e. p(r) \propto 1/(r^{1+mu}), mu =0.6.
+This observation led to conjecture that the trajectories of dollar bills are reminiscent of Lévy flights, 
+superdiffusive random walks characterized by a power law in the single step distribution. 
+
+
 See also references: 
 
 [1] Open mobility data (accessed June 2019)
@@ -46,3 +60,6 @@ borders)
 [3] Data for social good https://osf.io/ph46f/ Lecturers without borders
 
 [4] https://academic.oup.com/gigascience/article/8/6/giz076/5523201
+
+[5] D.Brockmann group
+http://rocs.hu-berlin.de/projects/wgproject/index.html 
