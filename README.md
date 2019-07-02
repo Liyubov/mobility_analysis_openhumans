@@ -9,7 +9,8 @@ Open mobility data (accessed June 2019)
 https://bluehub.jrc.ec.europa.eu/migration/app/index.html?state=5cc845a97758cd17cdecd1fb
 
 
-b. human mobility data from Erasmus network of student exchanges, and Openhumans open data from Openhumans.org  
+b. human mobility data from Erasmus network of student exchanges, and Openhumans open data from www.openhumans.org  
+and inspired from notebooks from https://github.com/gedankenstuecke Open Humans
 
 Erasmus travels is a subnetwork of the first network a., since most of the time 
 students are taking flights while travelling. 
