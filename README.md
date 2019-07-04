@@ -4,14 +4,17 @@ analysis of mobility patterns of humans from various data sources and models
 # analysis of global mobility data
 Here we analyze two datasets: 
 
+
+### notebook mobilitydata analyzer.ipynb
 a. global mobility data (air planes) 
 Open mobility data (accessed June 2019)
 https://bluehub.jrc.ec.europa.eu/migration/app/index.html?state=5cc845a97758cd17cdecd1fb
 
-
-b. human mobility data from Erasmus network of student exchanges, and Openhumans open data from www.openhumans.org  
+### notebook Analysis of human mobility trajectories.ipynb
+b. human mobility data from Openhumans open data from www.openhumans.org  
 and inspired from notebooks from https://github.com/gedankenstuecke Open Humans
 
+I also analyse later Erasmus network of student exchanges. 
 Erasmus travels is a subnetwork of the first network a., since most of the time 
 students are taking flights while travelling. 
 
