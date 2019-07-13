@@ -18,6 +18,8 @@ I also analyse later Erasmus network of student exchanges.
 Erasmus travels is a subnetwork of the first network a., since most of the time 
 students are taking flights while travelling. 
 
+### notebook analysis_of_trajectories.ipynb
+We analyze random trajectory (can be uploaded from the file or can be randomly generated) using standard methods of stochastic processes.
 
 The questions we consider here are:
 
