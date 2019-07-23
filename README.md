@@ -10,6 +10,8 @@ a. global mobility data (air planes)
 Open mobility data (accessed June 2019)
 https://bluehub.jrc.ec.europa.eu/migration/app/index.html?state=5cc845a97758cd17cdecd1fb
 
+We also are using great open data from openflights https://github.com/jpatokal/openflights/tree/master/data
+
 ### notebook Analysis of human mobility trajectories.ipynb
 b. human mobility data from Openhumans open data from www.openhumans.org  
 and inspired from notebooks from https://github.com/gedankenstuecke Open Humans
