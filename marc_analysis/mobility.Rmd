@@ -1,0 +1,220 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+# Loading libraries
+```{r}
+require(revgeo)
+```
+
+# Load researcher trajectory data
+```{r}
+t <- read.csv('trajectory_oh_1_person_lat_lon.csv')
+```
+
+```{r}
+head(t)
+```
+
+Some statistics on the daily travelled distance
+
+```{r}
+hist.0(t$distance, 50, xlab='Distance travelled')
+```
+
+# Number of days spent in each location
+
+We look at the total number of days spent at a same lat,lon coordinates. Ranking by most visited to least visited places, we look at the distribution of number of days to sort out "home" and "family" locations from pure travels.
+```{r}
+sp <- split(t, paste(t$latitude, t$longitude))
+Ndays <- unlist(lapply(sp, nrow))
+inds <- order(-Ndays)
+plot.0(Ndays[inds],
+       xlab='Location ranked by number of days',
+       ylab='Number of days',
+       log='xy'
+       )
+```
+
+# Heatmap
+
+Here we use a heatmap to represent in time (columns) which places are visited (rows). Red denotes visited, white not visited.
+
+```{r}
+locs_a <- paste(t$latitude, t$longitude)
+locs <- unique(paste(t$latitude, t$longitude))
+M <- NULL
+for (loc in locs){
+  M <- rbind(M, as.numeric(locs_a == loc))
+}
+colnames(M) <- t$date
+```
+
+```{r}
+pdf('plotHeatmap.pdf')
+heatmap.0(M, cexRow = 0.6, cexCol = 0.2, xlab='Time')
+dev.off()
+```
+
+# Reverse geolocation
+
+We use the revgeo library to get full addresses from lat,lon data using Open Street Maps Photon API. We use unique lat,lon coordinates to avoid overflooding the API.
+```{r, include=FALSE}
+locs <- unique(paste(t$latitude, t$longitude))
+locs_sp <- t(sapply(locs, function(x) strsplit(x,' ')[[1]]))
+geos <- revgeo(longitude=locs_sp[,2], latitude=locs_sp[,1], output='hash')
+```
+
+```{r}
+save(geos, file='geolocations.RData')
+```
+
+# Saving full dataframe
+
+We save the previous information to the initial dataframe for further manipulation
+```{r}
+t$city <- rep(NA, nrow(t))
+t$state <- rep(NA, nrow(t))
+t$zip <- rep(NA, nrow(t))
+t$country <- rep(NA, nrow(t))
+for (i in 1:length(locs)){
+  inds <- which(locs_a == locs[i])
+  t$city[inds] <- geos$city[i]
+  t$state[inds] <- geos$state[i]
+  t$zip[inds] <- geos$zip[i]
+  t$country[inds] <- geos$country[i]
+}
+
+```
+
+```{r}
+write.csv(t, file='trajectory_oh_1_person_lat_lon_with_geo.csv')
+```
+
+# Repeat analysis for city, zip, state levels
+
+```{r}
+sp <- split(t, t$zip)
+Ndays <- unlist(lapply(sp, nrow))
+inds <- order(-Ndays)
+plot.0(Ndays[inds],
+       xlab='ZIP code ranked by number of days',
+       ylab='Number of days',
+       log='xy'
+       )
+```
+
+```{r}
+locs_a <- t$zip
+locs <- unique(locs_a)
+M <- NULL
+for (loc in locs){
+  M <- rbind(M, as.numeric(locs_a == loc))
+}
+colnames(M) <- t$date
+rownames(M) <- locs
+
+pdf('plotHeatmap_zip.pdf')
+heatmap.0(M, cexRow = 0.6, cexCol = 0.2, xlab='Time')
+dev.off()
+```
+
+
+```{r}
+sp <- split(t, t$city)
+Ndays <- unlist(lapply(sp, nrow))
+inds <- order(-Ndays)
+plot.0(Ndays[inds],
+       xlab='City ranked by number of days',
+       ylab='Number of days',
+       log='xy'
+       )
+```
+
+```{r}
+locs_a <- t$city
+locs <- unique(locs_a)
+M <- NULL
+for (loc in locs){
+  M <- rbind(M, as.numeric(locs_a == loc))
+}
+colnames(M) <- t$date
+rownames(M) <- locs
+
+pdf('plotHeatmap_city.pdf')
+heatmap.0(M, cexRow = 0.6, cexCol = 0.2, xlab='Time')
+dev.off()
+```
+
+
+```{r}
+sp <- split(t, t$state)
+Ndays <- unlist(lapply(sp, nrow))
+inds <- order(-Ndays)
+plot.0(Ndays[inds],
+       xlab='State ranked by number of days',
+       ylab='Number of days',
+       log='xy'
+       )
+```
+
+
+```{r}
+locs_a <- t$state
+locs <- unique(locs_a)
+M <- NULL
+for (loc in locs){
+  M <- rbind(M, as.numeric(locs_a == loc))
+}
+colnames(M) <- t$date
+rownames(M) <- locs
+
+pdf('plotHeatmap_state.pdf')
+heatmap.0(M, cexRow = 0.6, cexCol = 0.2, xlab='Time')
+dev.off()
+```
+
+
+
+```{r}
+sp <- split(t, t$country)
+Ndays <- unlist(lapply(sp, nrow))
+inds <- order(-Ndays)
+plot.0(Ndays[inds],
+       xlab='Country ranked by number of days',
+       ylab='Number of days',
+       log='xy'
+       )
+```
+
+
+
+# Splitting data by location
+
+We split by city
+
+```{r}
+sp <- split(t$distance, t$city)
+mu <- unlist(lapply(sp, mean))
+se <- unlist(lapply(sp, se.0))
+inds <- order(-mu)
+
+Ndays <- unlist(lapply(sp[inds], length))
+cols <- rep('gray', length(Ndays))
+cols[order(-Ndays)[1:3]] <- 'red'
+
+
+```
+
+```{r}
+boxplot.0(sp[inds], 
+          mar=c(5,5,5,5), 
+          las=3, 
+          cex.axis = 0.6, 
+          ylab='Distance travelled',
+          main='Cities',
+          col=cols
+          )
+```
+
