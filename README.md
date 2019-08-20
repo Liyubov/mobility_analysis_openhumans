@@ -3,10 +3,16 @@
 *Authors: Liubov Tupikina, Bastian Greschake, Marc Santolini* 
 
 The project is dedicated to analysis of mobility data for social good: "what we can learn from our geolocation about how people are traveling and how they can contribute to local communities around the globe". 
+The research questions here are: 
+1. What are the properties of mobility data: 
+how can be characterize and predict future patterns of human mobility (e.g. geolocation data)?
+2. How some factors in the city (e.g. weather, population size etc.) 
+city network and distribution of bikes stations can influnece bike sharing functionality?
+General question: how livable is the city? Can we identify bottlenecks from the data of places, where people would like to go, but do not go for some reason.
 
 
-# mobility analysis
-we make analysis of mobility patterns of humans from various data sources and models
+# mobility analysis of individual trajectories
+We make analysis of mobility patterns of humans from various data sources and models
 
 # analysis of global mobility data
 Here we analyze two datasets: 
