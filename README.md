@@ -11,8 +11,6 @@ city network and distribution of bikes stations can influnece bike sharing funct
 General question: how livable is the city? Can we identify bottlenecks from the data of places, where people would like to go, but do not go for some reason.
 
 
-# mobility analysis of individual trajectories
-We make analysis of mobility patterns of humans from various data sources and models
 
 # analysis of global mobility data
 Here we analyze two datasets: 
@@ -24,6 +22,10 @@ Open mobility data (accessed June 2019)
 https://bluehub.jrc.ec.europa.eu/migration/app/index.html?state=5cc845a97758cd17cdecd1fb
 
 We also are using great open data from openflights https://github.com/jpatokal/openflights/tree/master/data
+
+# mobility analysis of individual trajectories
+
+We make analysis of mobility patterns of humans from various data sources and try to fit it to models 
 
 ### notebook Analysis of human mobility trajectories.ipynb
 b. human mobility data from Openhumans open data from www.openhumans.org  
