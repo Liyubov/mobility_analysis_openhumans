@@ -6,9 +6,11 @@ The project is dedicated to analysis of mobility data for social good: "what we 
 The research questions here are: 
 1. What are the properties of mobility data: 
 how can be characterize and predict future patterns of human mobility (e.g. geolocation data)?
-2. How some factors in the city (e.g. weather, population size etc.) 
-city network and distribution of bikes stations can influnece bike sharing functionality?
+2. How different factors (e.g. weather, population size, city network and distribution of bikes stations  etc.) 
+can influnece mobility? E.g. how these factors may influence bike sharing functionality, public transport usage.
+
 General question: how livable is the city? Can we identify bottlenecks from the data of places, where people would like to go, but do not go for some reason.
+
 
 
 
