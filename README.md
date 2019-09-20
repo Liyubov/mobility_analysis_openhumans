@@ -15,12 +15,12 @@ General question: how livable is the city? Can we identify bottlenecks from the 
 
 
 # datasets
-### analysis of global mobility data
 Here we analyze two datasets: 
 1. global mobility data 
 2. individual mobility data 
 There are many othttps://www.kaggle.com/dryad/human-mobility-during-natural-disasters datasets for analysis of trajectories such as https://crawdad.org/epfl/mobility/20090224/ or recently release Kaggle 
 
+# notebooks for analysis of individual trajectories
 
 ### notebook mobilitydata analyzer.ipynb
 a. global mobility data (air planes) 
@@ -29,7 +29,6 @@ https://bluehub.jrc.ec.europa.eu/migration/app/index.html?state=5cc845a97758cd17
 
 We also are using great open data from openflights https://github.com/jpatokal/openflights/tree/master/data
 
-# mobility analysis of individual trajectories
 
 We make analysis of mobility patterns of humans from various data sources and try to fit it to models 
 
