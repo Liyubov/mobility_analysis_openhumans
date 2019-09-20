@@ -14,8 +14,12 @@ General question: how livable is the city? Can we identify bottlenecks from the 
 
 
 
-# analysis of global mobility data
+# datasets
+### analysis of global mobility data
 Here we analyze two datasets: 
+1. global mobility data 
+2. individual mobility data 
+There are many othttps://www.kaggle.com/dryad/human-mobility-during-natural-disasters datasets for analysis of trajectories such as https://crawdad.org/epfl/mobility/20090224/ or recently release Kaggle 
 
 
 ### notebook mobilitydata analyzer.ipynb
