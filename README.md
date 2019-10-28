@@ -9,9 +9,10 @@ how can be characterize and predict future patterns of human mobility (e.g. geol
 2. How different factors (e.g. weather, population size, city network and distribution of bikes stations  etc.) 
 can influnece mobility? E.g. how these factors may influence bike sharing functionality, public transport usage.
 
-General question: how livable is the city? Can we identify bottlenecks from the data of places, where people would like to go, but do not go for some reason.
+General question: how people are traveling between or within the city? Can we identify bottlenecks from the data of places, where people would like to go, but do not go for some reason?
 
-
+# data collection 
+If you are interested in contributing in data collection feel free to participate in the OH subproject on mobility of researchers https://www.openhumans.org/activity/mobility-data-of-researchers/
 
 
 # datasets
@@ -19,6 +20,7 @@ Here we analyze two datasets:
 1. global mobility data 
 2. individual mobility data 
 There are many othttps://www.kaggle.com/dryad/human-mobility-during-natural-disasters datasets for analysis of trajectories such as https://crawdad.org/epfl/mobility/20090224/ or recently release Kaggle 
+3. future dataset for mobility of researchers https://www.openhumans.org/activity/mobility-data-of-researchers/
 
 # notebooks for analysis of individual trajectories
 
