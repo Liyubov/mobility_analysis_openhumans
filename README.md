@@ -12,7 +12,7 @@ can influnece mobility? E.g. how these factors may influence bike sharing functi
 General question: how people are traveling between or within the city? Can we identify bottlenecks from the data of places, where people would like to go, but do not go for some reason?
 
 # data collection 
-If you are interested in contributing in data collection feel free to participate in the OH subproject on mobility of researchers https://www.openhumans.org/activity/mobility-data-of-researchers/
+If you are interested in contributing in data collection for traveling researchers, feel free to participate in the OH subproject on mobility of researchers https://www.openhumans.org/activity/mobility-data-of-researchers/
 
 
 # datasets
@@ -20,7 +20,8 @@ Here we analyze two datasets:
 1. global mobility data 
 2. individual mobility data 
 There are many othttps://www.kaggle.com/dryad/human-mobility-during-natural-disasters datasets for analysis of trajectories such as https://crawdad.org/epfl/mobility/20090224/ or recently release Kaggle 
-3. future dataset for mobility of researchers https://www.openhumans.org/activity/mobility-data-of-researchers/
+3. dataset for mobility of researchers https://www.openhumans.org/activity/mobility-data-of-researchers/
+4. dataset examples https://github.com/mmalekzadeh/motion-sense/blob/master/Public_HAR_Data.md
 
 # notebooks for analysis of individual trajectories
 
