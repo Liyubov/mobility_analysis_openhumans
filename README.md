@@ -16,12 +16,13 @@ If you are interested in contributing in data collection for traveling researche
 
 
 # datasets
-Here we analyze two datasets: 
-1. global mobility data 
+Here we analyze several datasets: 
+1. global mobility data (open flights)
 2. individual mobility data 
 There are many othttps://www.kaggle.com/dryad/human-mobility-during-natural-disasters datasets for analysis of trajectories such as https://crawdad.org/epfl/mobility/20090224/ or recently release Kaggle 
 3. dataset for mobility of researchers https://www.openhumans.org/activity/mobility-data-of-researchers/
 4. dataset examples https://github.com/mmalekzadeh/motion-sense/blob/master/Public_HAR_Data.md
+5. open data on population density https://ourworldindata.org/grapher/population-density
 
 # notebooks for analysis of individual trajectories
 
@@ -88,7 +89,7 @@ This observation led to conjecture that the trajectories of dollar bills are rem
 superdiffusive random walks characterized by a power law in the single step distribution. 
 
 
-See also references: 
+References: 
 
 [1] Open mobility data (accessed June 2019)
 https://bluehub.jrc.ec.europa.eu/migration/app/index.html?state=5cc845a97758cd17cdecd1fb
