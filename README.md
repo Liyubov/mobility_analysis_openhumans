@@ -1,6 +1,6 @@
 # project goal and details 
 
-*Authors: Liubov Tupikina, Bastian Greschake, Marc Santolini* 
+*Authors: Liubov Tupikina, Bastian Greschake, Marc Santolini, Vero Estrada* 
 
 The project is dedicated to analysis of mobility data for social good: "what we can learn from our geolocation about how people are traveling and how they can contribute to local communities around the globe". 
 The research questions here are: 
