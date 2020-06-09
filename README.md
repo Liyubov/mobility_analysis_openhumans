@@ -76,7 +76,7 @@ More details are described for trajectories on networks:
 
 L. Tupikina, D.Grebenkov “Temporal and structural heterogeneities in networks” Applied network Journ. (2019) 
 
-D.Grebenkov, L. Tupikina “Heterogeneous continuous time random walk”, link to Physical Rev. E Journal E 97, 012148 (2018)
+D. Grebenkov, L. Tupikina “Heterogeneous continuous time random walk”, link to Physical Rev. E Journal E 97, 012148 (2018)
 
 
 Analysis of other dataset of roughly a million individual displacements was made here (work by D.Brockmann group)
@@ -104,3 +104,8 @@ borders)
 
 [5] D.Brockmann group
 http://rocs.hu-berlin.de/projects/wgproject/index.html 
+
+# How to contribute?
+
+1. You can share your data: please go to Openhumans page https://www.openhumans.org/activity/mobility-data-of-researchers/
+2. Make pull request of a repository and feel free to upload your ideas.
