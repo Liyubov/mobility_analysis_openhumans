@@ -31,6 +31,8 @@ a. global mobility data (air planes)
 Open mobility data (accessed June 2019)
 https://bluehub.jrc.ec.europa.eu/migration/app/index.html?state=5cc845a97758cd17cdecd1fb
 
+Due to COVID19 the project is no longer the same, as it was initially. Please look for updates.
+
 We also are using great open data from openflights https://github.com/jpatokal/openflights/tree/master/data
 
 
